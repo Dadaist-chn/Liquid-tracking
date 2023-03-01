@@ -24,3 +24,6 @@ This guidance is used to run this liquid tracking project.
   Note the recommended Matlab version is 2020b or other new versions. 
 
 4. Open the project window agaiin and compile this project to generate executable file.
+
+Please download the YOLO files and YOLO deepsort files here, as I can't upload files that exceed 100MB.
+https://aaltofi-my.sharepoint.com/:f:/r/personal/yinda_xu_aalto_fi/Documents/Liquid%20tracking%20files?csf=1&web=1&e=RjVKfY
