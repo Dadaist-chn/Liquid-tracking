@@ -1,0 +1,80 @@
+
+EdgeDetection:
+
+   #filepath:   	"D:\\VISP_WS\\Projects\\Videos\\50 FPS Grayscale\\Multi Droplet"
+   #filepath:		"D:\\VISP_WS\\Projects\\Videos\\10 FPS Color"
+   #filepath: 		"D:\\VISP_WS\\Projects\\Videos\\Initial"
+   #filepath:		"D:\\VISP_WS\\Projects\\Videos\\50 FPS Grayscale\\Set 1"
+   filepath:		"D:\\VISP_WS\\Projects\\Videos\\50 FPS Grayscale\\Set 2"
+
+   #filepath: 		"C:\\visp-ws\\videos"
+   #filepath: 		"C:\\visp-ws\\videos"
+  
+   #filepath:		"D:\\videos\\Initial"
+   #filepath:		"D:\\videos\\10 FPS Color"
+   #filepath:		"D:\\videos\\50 FPS Grayscale\\Multi Droplet"
+   #filepath:		"D:\\videos\\50 FPS Grayscale\\Set 1"
+   #filepath:		"D:\\videos\\50 FPS Grayscale\\Set 2"
+   #filepath:		".\\videos"
+
+   GaussianSigmaX:	0.5
+   GaussianSigmaY: 	0.5
+   CannyThreshold1:	70
+   CannyThreshold2:	30
+
+   roiTop: 280
+   roiLeft: 260
+   roiHeight: 370
+   roiWidth: 370
+   
+
+#---------------------------------------------------------------------------------------
+
+MultiDropletTracking:
+
+   #filepath:   	"D:\\VISP_WS\\Projects\\Videos\\50 FPS Grayscale\\Multi Droplet"
+   #filepath:		"D:\\VISP_WS\\Projects\\Videos\\50 FPS Grayscale\\Set 2"
+   #filepath:		"D:\\VISP_WS\\Projects\\Videos\\10 FPS Color"
+   #filepath:		"D:\\VISP_WS\\Projects\\Videos\\50 FPS Grayscale\\Set 2"
+   filepath: 		"C:\\visp-ws\\videos\\50 FPS Grayscale\\Multi Droplet"
+   #filepath:		"D:\\videos"
+   #filepath:		".\\videos"
+
+   minThreshold:	10 #100 # 110 breaks
+   maxThreshold:	200 #200 # 160 breaks
+   minArea:		25  # 59 breaks
+   minCircularity:	0.1 # 0.785 for a square
+   minConvexity:	0.87
+   minInertiaRatio:	0.01
+   
+   selectroi:		0 # bad idea
+   treshold:		0 # bad idea
+   YOLOinit:            1
+   YOLOdetect:          1
+
+   roiTop: 405		# 405, 150
+   roiLeft: 280 	# 280, 150
+   roiHeight: 255	# 255, 700
+   roiWidth: 310	# 310, 700
+
+#---------------------------------------------------------------------------------------
+
+YoloDetection:
+	
+   #filepath:   	"D:\\videos\\50 FPS Grayscale\\Multi Droplet"
+   filepath:   	"D:\\VISP_WS\\Projects\\Videos\\50 FPS Grayscale\\Multi Droplet"
+   #filepath:		"D:\\VISP_WS\\Projects\\Videos\\10 FPS Color"
+   #filepath: 		"D:\\VISP_WS\\Projects\\Videos\\Initial"
+   #filepath:		"D:\\VISP_WS\\Projects\\Videos\\50 FPS Grayscale\\Set 1"
+   #filepath:		"D:\\VISP_WS\\Projects\\Videos\\50 FPS Grayscale\\Set 2"
+   #filepath: 		"C:\\visp-ws\\videos\\50 FPS Grayscale\\Multi Droplet"
+
+   #yoloConfigPath:		"D:\\VISP_WS\\Projects\\liquid-tracking\\YoloFiles\\yolo-obj.cfg"
+   #modelParametersPath:		"D:\\VISP_WS\\Projects\\liquid-tracking\\YoloFiles\\yolo-obj_final.weights"
+
+   #yoloConfigPath:		"D:\\visp-ws\\liquid-tracking\\build\\Release\\yolo-obj.cfg"
+   #modelParametersPath:		"D:\\visp-ws\\liquid-tracking\\build\\Release\\yolo-obj_final.weights"
+
+   yoloConfigPath:		"C:\\visp-ws\\liquid-tracking\\YoloFiles\\yolo-obj.cfg"
+   modelParametersPath:		"C:\\visp-ws\\liquid-tracking\\YoloFiles\\yolo-obj_final.weights"
+
